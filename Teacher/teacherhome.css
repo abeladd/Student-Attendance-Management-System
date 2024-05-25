@@ -1,0 +1,181 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "poppin" sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(24, 23, 23, 0.75), rgba(0,0,0,0.75)), url(Pictures/HomeBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 3.5%;
+  left: 75%;
+  z-index: 999;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #0a534c;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-top: 0%;
+  position: fixed; 
+  left: 32%; 
+  top: 7%; 
+  font-size: 30px;
+}
+.wrapper {
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 22%;
+  height: 90vh;
+  background: transparent;
+  border: 2px solid #464747;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.wrapper2 {
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  width: 63%;
+  height: 80vh;
+  background: transparent;
+  border: 2px solid #464747;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+p{
+  padding: 5%;
+}
+
+  label{
+    font-size: 14px;
+    margin-left: 7%;
+  }
+  select {
+    width: 90%;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    padding: 2%;
+    background: transparent;
+    border: 2px solid #009688;
+  }
+
+select option{
+  color: black;
+}
+select:focus {
+  color: white;
+}
+select:hover{
+  cursor: pointer;
+}
+
+button{
+  width: 40%;
+  font-size: 13px;
+  padding: 5%;
+  margin: 3%;
+  margin-left: 55%;
+  top: -3%;
+  font-weight: bold;
+  border: 2px solid #009688;
+  color: white; 
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+button span{
+  background: #009688;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.button:hover span{
+  width: 100%;
+}
+.button:hover{
+  cursor: pointer;
+  border: none;
+}
+
+ .logout-btn {
+  display: block;
+  width: 30%; 
+  margin-top: 70%; 
+  margin-left: 14%; 
+  border-radius: 25px;
+  padding: 4%;
+  font-size: 12px;
+  float: right;
+}
+
+
+
+

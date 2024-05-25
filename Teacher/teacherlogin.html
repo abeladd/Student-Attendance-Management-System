@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <title>Teacher login page</title>
+    </head>
+    <body>
+      <div class="navbar">
+        <ul>
+            <li><a href="../Home.html">HOME</a></li>
+            <li>ABOUT</li>
+            <li>CONTACT US</li>
+        </ul>
+      </div>
+        
+     
+        <div class="wrapper">
+          <form id="loginForm" action=""> 
+              <h1>TEACHER LOGIN</h1>
+              <div class="inputbox">
+                  <input type="text" id="username" placeholder="Username" required>
+              </div>
+      
+              <div class="inputbox">
+                  <input type="password" id="password" placeholder="Password" required> 
+              </div>
+      
+              <div class="remember-forgot">
+                  <label>
+                      <input type="checkbox">Remember me?
+                  </label>
+                  <a href="#">Forgot password?</a>
+              </div>
+      
+              <button type="submit" class="button"><span></span>Login</button>
+      
+              <div class="register-link">
+                  <p>Don't have an account ?</p><a href="#">Register</a>
+              </div>
+      
+          </form>
+      </div>
+      
+      <script>
+          document.getElementById("loginForm").addEventListener("submit", function(event) {
+              event.preventDefault(); 
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+      
+              
+              if (username === "ttt" && password === "123") {
+                  
+                  window.location.href = "teacherhome.html";
+              } else {
+                  
+                  alert("Invalid username or password. Please try again.");
+              }
+          });
+      </script>
+    </body>
+</html>

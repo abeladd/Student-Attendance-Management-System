@@ -1,0 +1,107 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "poppin" sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(24, 23, 23, 0.75), rgba(0,0,0,0.75)), url(Pictures/HomeBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0a534c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content {
+    color: white;
+    width: 100%;
+    top: 50%;
+    transform: translateY(30px);
+    transform: translateX(30px);
+    left: 50%;
+    text-align: center;
+}
+.content h1{
+    font-size: 28px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.content p{
+    font-size: 20px;
+    color: white;
+    margin-right: 0;
+}
+.button{
+    width: 280px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 1% 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.40);
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.button:hover span{
+    width: 100%;
+}
+.button:hover{
+    border: none;
+}

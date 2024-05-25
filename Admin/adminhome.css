@@ -1,0 +1,178 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "poppin" sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(24, 23, 23, 0.75), rgba(0,0,0,0.75)), url(Pictures/HomeBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 3.5%;
+  left: 75%;
+  z-index: 999; 
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #0a534c;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-top: 0%;
+  position: fixed; 
+  left: 32%; 
+  top: 7%; 
+  font-size: 30px;
+}
+.wrapper {
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 22%;
+  height: 90vh;
+  background: transparent;
+  border: 2px solid #464747;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.wrapper2 {
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  width: 63%;
+  height: 80vh;
+  background: transparent;
+  border: 2px solid #464747;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+.t {
+    font-size: 16px;
+    margin: 6%;
+    margin-top: 4%;
+}
+
+.s {
+    font-size: 16px;
+    margin: 6%;
+    margin-top: 15%;
+    
+}
+
+button{
+  width: 90%;
+  font-size: 14px;
+  padding: 6%;
+  margin: 3%;
+  margin-left: 5%;
+  font-weight: bold;
+  border: 2px solid #009688;
+  color: white; 
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+button span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button:hover span{
+    width: 100%;
+}
+.button:hover{
+    cursor: pointer;
+    border: none;
+}
+
+.button.active {
+  background-color: #009688;
+  color: white; 
+}
+
+.report-btn {
+  display: block;
+  width: 30%;
+  top: 85%; 
+  margin-left: 9%; 
+  border-radius: 25px;
+  padding: 4%;
+  font-size: 14px;
+  position: fixed;
+}
+
+.logout-btn {
+  display: block;
+  width: 30%;
+  top: 85%; 
+  margin-left: 50%; 
+  border-radius: 25px;
+  padding: 4%;
+  font-size: 14px;
+  position: fixed;
+}
+
+

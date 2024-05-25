@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: white;
+}
+
+table {
+    width: 140%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+th.teacher-name, td.teacher-name {
+    width: 110px;
+    word-wrap: break-word;
+}
+
+td {
+    padding: 0; 
+    overflow: hidden; 
+    height: 40px; 
+}
+
+td input[type="checkbox"] {
+    width: 40px;
+    height: 30px; 
+    margin: 0 auto; 
+    display: block; 
+    position: relative;
+    top: 38%;
+    transform: translateY(-50%); 
+}
+
+button {
+    width: auto;
+    font-size: 12px;
+    padding: 1.8%;
+    margin: 1%;
+    font-weight: bold;
+    border: 2px solid #009688;
+    color: white; 
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+button span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+    border: none;
+}
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #444;
+    cursor: pointer;
+    background-color: white; 
+    border-radius: 3px; 
+}
+
+
+input[type="checkbox"].green {
+    background-color: green;
+    border-color: green;
+    box-shadow: 0 0 0 1px green;
+}
+
+input[type="checkbox"].blue {
+    background-color: rgb(182, 5, 5);
+    border-color:rgb(182, 5, 5);
+    box-shadow: 0 0 0 1px rgb(182, 5, 5);
+}
+
+
+.grayed-out {
+    background-color: #f0f0f0;
+    pointer-events: none;
+    opacity: 0.6;
+}
+

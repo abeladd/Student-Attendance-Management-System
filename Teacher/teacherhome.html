@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Teacher home</title>
+  <link rel="stylesheet" href="teacherhome.css">
+  <script src="teacherhome.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="../Home.html">HOME</a></li>
+      <li>ABOUT</li>
+      <li>CONTACT US</li>
+    </ul>
+  </div>
+  <h1>Teacher's page</h1>
+  <div class="wrapper">
+    <p></p>
+    <label for="Department">Select department</label><br>
+    <select name="Department" id="Department">
+      <option value=""></option>
+      <option value="Marketing">Marketing</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Managment">Managment</option>
+      <option value="Accounting">Accounting</option>
+    </select>
+    <label for="Section">Select Section</label><br>
+    <select name="Section" id="Section">
+      <option value=""></option>
+      <option value="A">CLASS A</option>
+      <option value="B">CLASS B</option>
+      <option value="C">CLASS D</option>
+      <option value="D">CLASS D</option>
+    </select>
+    <button onclick="displayHello()" class="button"><span></span>Display</button>
+    <button class="button logout-btn" onclick="confirmLogout()"><span></span>Logout</button>
+  </div>
+
+  <div class="wrapper2" id="wrapper2">
+      
+  </div>
+</body>
+</html>

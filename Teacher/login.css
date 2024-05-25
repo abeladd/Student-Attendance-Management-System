@@ -1,0 +1,181 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "poppin" sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(24, 23, 23, 0.75), rgba(0,0,0,0.75)), url(Pictures/HomeBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 3.5%;
+    left: 72%;
+    z-index: 999;
+  }
+  
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0a534c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+
+.wrapper{
+    width: 30%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px ;
+    
+    
+}
+
+.wrapper h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 ;
+    margin-bottom: 10%;
+}
+
+
+.wrapper .inputbox{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 20px;
+}
+
+.inputbox input{
+    margin-bottom: 50%;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+}
+
+.inputbox input::placeholder{
+    color: rgb(153, 143, 143);
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+
+}
+
+.button{
+    width: 95%;
+    padding: 15px 100px 15px 100px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.40);
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button:hover span{
+    width: 100%;
+}
+.button:hover{
+    border: none;
+}
+
+.wrapper .register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="adminstuff.css">
+    <script src="adminstuff.js"></script>
+</head>
+<body>
+
+<h2>Teacher's Info</h2>
+
+<table id="teacherInfoTable">
+    <thead>
+        <tr>
+            <th>Teacher names</th>
+            <th>ID</th>
+            <th>Department</th>
+            <th>Phone number</th>
+            <th>Section</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><input type="checkbox">John Doe</td>
+            <td>12345</td>
+            <td>Mathematics</td>
+            <td>(555) 555-5555</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">Jane Smith</td>
+            <td>67890</td>
+            <td>Science</td>
+            <td>(555) 555-5556</td>
+            <td>B</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox">Jane Smith</td>
+          <td>67890</td>
+          <td>Science</td>
+          <td>(555) 555-5556</td>
+          <td>B</td>
+       </tr>
+       <tr>
+        <td><input type="checkbox">Jane Smith</td>
+        <td>67890</td>
+        <td>Science</td>
+        <td>(555) 555-5556</td>
+        <td>B</td>
+       </tr>
+       <tr>
+        <td><input type="checkbox">Jane Smith</td>
+        <td>67890</td>
+        <td>Science</td>
+        <td>(555) 555-5556</td>
+        <td>B</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox">Jane Smith</td>
+          <td>67890</td>
+          <td>Science</td>
+          <td>(555) 555-5556</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox">Jane Smith</td>
+          <td>67890</td>
+          <td>Science</td>
+          <td>(555) 555-5556</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox">Jane Smith</td>
+          <td>67890</td>
+          <td>Science</td>
+          <td>(555) 555-5556</td>
+          <td>B</td>
+        </tr>
+        
+    </tbody>
+</table>
+    <div class="fixed-buttons">
+      <button type="submit" class="button" id="addButton"><span></span>ADD</button>
+      <button type="submit" class="button" id="assignButton"><span></span>ASSIGN</button>
+      <button type="submit" class="button" id="updateButton"><span></span>UPDATE</button>
+      <button type="submit" class="button" id="removeButton"><span></span>REMOVE</button>
+    </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Teacher's Database</h2>
+        <table id="modalTable">
+          <thead>
+              <tr>
+                  <th>Teacher names</th>
+                  <th>ID</th>
+                  <th>Department</th>
+                  <th>Phone number</th>
+                  <th>Section</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+              <tr>
+                  <td><input type="checkbox">John Doe</td>
+                  <td>12345</td>
+                  <td>Mathematics</td>
+                  <td>(555) 555-5555</td>
+                  <td>A</td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox">Jane Smith</td>
+                  <td>67890</td>
+                  <td>Science</td>
+                  <td>(555) 555-5556</td>
+                  <td>B</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox">Jane Smith</td>
+                <td>67890</td>
+                <td>Science</td>
+                <td>(555) 555-5556</td>
+                <td>B</td>
+             </tr>
+        </table>
+        <button id="modalAddButton" class="button addbtn"><span></span>Add</button>
+    </div>
+  </div>
+  
+<div id="assignmentModal" class="modal">
+  <div class="modal-content">
+      <span id="closeAssignModalBtn" class="close">&times;</span>
+      <h2>Assign Teacher</h2>
+      <label for="teacherDropdown">Select Teacher:</label>
+      <select id="teacherDropdown" class="tslist">
+      </select><br>
+      <label for="sectionDropdown">Select Section:</label>
+      <select id="sectionDropdown" class="tslist">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          
+      </select><br>
+      <button id="assignConfirmBtn" class="button addbtn"><span></span>Assign</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>

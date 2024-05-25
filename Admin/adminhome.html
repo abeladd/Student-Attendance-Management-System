@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin home</title>
+  <link rel="stylesheet" href="adminhome.css">
+  <script src="adminhome.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="../Home.html">HOME</a></li>
+      <li>ABOUT</li>
+      <li>CONTACT US</li>
+    </ul>
+  </div>
+  <h1>Admin's page</h1>
+  <div class="wrapper">
+    <h3 class="t">Manage teachers</h3>
+    <button type="submit" class="button" id="teacherAttendanceButton" onclick="teacherattendaceBtn('teacherAttendanceButton')"><span></span>Teacher's attendance</button>
+    <button type="submit" class="button" id="assignButton" onclick="assignBtn()"><span></span>Stuff</button>
+    <h3 class="s">Manage students</h3>
+    <button type="submit" class="button" id="registerButton" onclick="registerbtn('registerButton')"><span></span>Assign</button>
+    <button type="submit" class="button" id="viewAttendanceButton" onclick="setActiveButton('viewAttendanceButton')"><span></span>View attendance</button>
+    <button class="button report-btn" id="reportButton" onclick="setActiveButton('reportButton')"><span></span>Report</button>
+    <button class="button logout-btn" id="logoutButton" onclick="confirmLogout()"><span></span>Logout</button>
+  </div>
+
+  <div class="wrapper2" id="wrapper2">
+
+  </div>
+</body>
+</html>
